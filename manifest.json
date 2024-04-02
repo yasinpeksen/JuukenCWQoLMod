@@ -1,0 +1,7 @@
+{
+  "name": "JuukenQoLMod",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/yasinpeksen",
+  "description": "This is QoL changes mod for Content Warning game. Right now only changes Camera recording duration.",
+  "dependencies": []
+}
