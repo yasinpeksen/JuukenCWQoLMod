@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuukenCWMod", "JuukenCWMod.csproj", "{442ECDFF-2433-456F-98C0-EB5B7B10B723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuukenQoLMod", "JuukenQoLMod.csproj", "{442ECDFF-2433-456F-98C0-EB5B7B10B723}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

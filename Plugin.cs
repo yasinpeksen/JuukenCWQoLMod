@@ -1,17 +1,17 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using JuukenCWMod.Config;
+using JuukenQoLMod.Config;
 using System.Reflection;
 
-namespace JuukenCWMod
+namespace JuukenQoLMod
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    public class JuukenCWMod : BaseUnityPlugin
+    public class JuukenQoLMod : BaseUnityPlugin
     {
-        private static JuukenCWMod Instance;
+        private static JuukenQoLMod Instance;
 
-        internal static JuukenCWModConfig config { get; private set; }
+        internal static JuukenQoLModConfig config { get; private set; }
         internal static new ManualLogSource Logger { get; private set; }
 
         private readonly Harmony harmony = new(PluginInfo.PLUGIN_GUID);
@@ -20,12 +20,12 @@ namespace JuukenCWMod
         {
             if (Instance == null)
             {
-                Instance = new JuukenCWMod();
+                Instance = new JuukenQoLMod();
             }
 
             Logger = base.Logger;
 
-            config = new JuukenCWModConfig(Config);
+            config = new JuukenQoLModConfig(Config);
 
             // Plugin startup logic
             Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");

@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
+using JuukenQoLMod;
 
-namespace JuukenCWMod.Patches
+namespace JuukenQoLMod.Patches
 {
     [HarmonyPatch(typeof(VideoCamera))]
     internal class VideoCameraPatch
@@ -12,11 +13,11 @@ namespace JuukenCWMod.Patches
         {
             if (___m_recorderInfoEntry.maxTime == 90f)
             {
-                float maxRecordTime = JuukenCWMod.config.VIDEO_CLIP_DURATION.Value;
+                float maxRecordTime = JuukenQoLMod.config.VIDEO_CLIP_DURATION.Value;
                 ___m_recorderInfoEntry.maxTime = maxRecordTime;
                 ___m_recorderInfoEntry.timeLeft = maxRecordTime;
                 ___m_recorderInfoEntry.SetDirty();
-                JuukenCWMod.Logger.LogInfo($"Changed camera max record time to {maxRecordTime}");
+                JuukenQoLMod.Logger.LogInfo($"Changed camera max record time to {maxRecordTime}");
             }
         }
     }
